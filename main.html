@@ -1,15 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        border-radius: 12px; /* curve the edges */
+        overflow: hidden;
+      }
+      th,
+      td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        background-color: rgb(8, 93, 121);
+        color: white;
+      }
+      tr:nth-child(even) {
+        background-color: #d2cece;
+      }
+    </style>
+  </head>
+  <body>
     <!-- add table here -->
-
-        
-</body>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Kills</th>
+          <th>Saved</th>
+          <th>Deaths</th>
+          <th>Revives</th>
+          <th>Win</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>hemanth</td>
+          <td>10</td>
+          <td>5</td>
+          <td>2</td>
+          <td>3</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>john</td>
+          <td>8</td>
+          <td>7</td>
+          <td>4</td>
+          <td>2</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>alice</td>
+          <td>15</td>
+          <td>10</td>
+          <td>1</td>
+          <td>5</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>bob</td>
+          <td>6</td>
+          <td>3</td>
+          <td>5</td>
+          <td>1</td>
+          <td>0</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
 </html>
